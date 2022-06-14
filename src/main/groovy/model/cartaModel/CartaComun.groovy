@@ -14,6 +14,10 @@ class CartaComun implements Carta{
         return(this.numero == otraCarta.numero || this.color == otraCarta.color)
     }
 
+    boolean esJugadaValida(Carta otraCarta){
+        true
+    }
+
     // public void devolverAlMazo(){
     //     this.estadoCarta = new Desactivada();
     //     this.mazo.vuelveAlMazo(this);

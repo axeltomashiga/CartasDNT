@@ -1,12 +1,13 @@
 package uno
 
-import model.cartaModel.CartaComun
 import model.mazoModel.Mazo
 import spock.lang.*
+
 class MazoClassTest extends Specification{
-    void "prueba mezclar mazo"(){
-        Mazo mazo = new Mazo();
-        var aux = mazo.mazoCarta.clone();
+    void "pruebaJugadaValida"(){
+        Mazo mazo = new Mazo()
+        var aux = mazo.mazoCarta.clone()
+        mazo.mezlarMazo()
         expect:
             aux != mazo.mazoCarta
     }
