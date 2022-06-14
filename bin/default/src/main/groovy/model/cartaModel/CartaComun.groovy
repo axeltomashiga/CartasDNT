@@ -1,6 +1,6 @@
 package model.cartaModel
 
-class CartaComun {
+class CartaComun implements Carta{
 
     public String numero
     public String color
@@ -8,10 +8,6 @@ class CartaComun {
     CartaComun(String color, String numero) {
         this.color = color
         this.numero = numero
-    }
-
-    String getSimbolo() {
-        return simbolo
     }
 
     boolean esJugadaValida(CartaComun otraCarta) {
