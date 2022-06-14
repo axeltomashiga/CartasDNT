@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="uno.IntegracionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-06-14T20:33:48" hostname="DESKTOP-E7FHRO6" time="0.128">
+  <properties/>
+  <testcase name="gana un jugador y se reparte el premio" classname="uno.IntegracionTest" time="0.128"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

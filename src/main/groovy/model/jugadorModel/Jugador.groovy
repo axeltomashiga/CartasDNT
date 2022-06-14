@@ -26,4 +26,12 @@ class Jugador {
     boolean gano(){
         this.mano.isEmpty()
     }
+
+    void darPremio(BigDecimal premio){
+        this.usuario.cargarSaldo(premio);
+    }
+
+    BigDecimal verSaldo(){
+        this.usuario.saldo as BigDecimal
+    }
 }

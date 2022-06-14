@@ -1,6 +1,7 @@
 package model.partidaModel
 
 import io.micronaut.core.value.ValueException
+import model.jugadorModel.Jugador
 import model.jugadorModel.Usuario
 
 class Sala {
@@ -29,8 +30,12 @@ class Sala {
 
     Partida iniciarPartida(){
         if (this.usuarios.size() == this.cantidadJugadoresMaximo){
-            var aux = this.usuarios.forEach( usuario -> usuario.generarJugador())
-            return new Partida(aux, this.apuesta)
+            ArrayList<Jugador> listaJuagdores = new ArrayList<>()
+            this.usuarios.forEach( usuario -> {
+                usuario.retirarSaldo(this.apuesta)
+                listaJuagdores.add(usuario.generarJugador())
+            })
+            return new Partida(listaJuagdores , this.apuesta)
         }
     }
 }
