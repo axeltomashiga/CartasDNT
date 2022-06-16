@@ -2,14 +2,14 @@ package model.jugadorModel
 
 import java.time.LocalDateTime
 
-class Usuario {
+class UsuarioModel {
     BigDecimal saldo;
     String nombre;
     String contrasenia;
     Jugador jugador;
     LocalDateTime ban;
 
-    Usuario(){
+    UsuarioModel(){
         this.saldo = 0
         this.nombre = "asd"
         this.contrasenia = "asd"

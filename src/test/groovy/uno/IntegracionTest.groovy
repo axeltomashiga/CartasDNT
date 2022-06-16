@@ -1,19 +1,19 @@
 package uno
 
 import model.jugadorModel.Jugador
-import model.jugadorModel.Usuario
+import model.jugadorModel.UsuarioModel
 import model.partidaModel.Partida
 import model.partidaModel.Sala
 import spock.lang.Specification
 
 class IntegracionTest extends Specification {
-    Usuario a;
-    Usuario b;
+    UsuarioModel a;
+    UsuarioModel b;
     Partida partida;
 
     def setup() {
-        a =  new Usuario()
-        b =  new Usuario()
+        a =  new UsuarioModel()
+        b =  new UsuarioModel()
         a.cargarSaldo(1000 as BigDecimal)
         b.cargarSaldo(1000 as BigDecimal)
         Sala sala = new Sala(50 as BigDecimal, 2, a)

@@ -2,24 +2,24 @@ package model.partidaModel
 
 import io.micronaut.core.value.ValueException
 import model.jugadorModel.Jugador
-import model.jugadorModel.Usuario
+import model.jugadorModel.UsuarioModel
 
 class Sala {
-    ArrayList<Usuario> usuarios;
+    ArrayList<UsuarioModel> usuarios;
     BigDecimal apuesta;
     Integer cantidadJugadoresMaximo;
 
-    Sala(BigDecimal apuesta, Integer cantidadJugadoresMaximo , Usuario usuario){
+    Sala(BigDecimal apuesta, Integer cantidadJugadoresMaximo, UsuarioModel usuario){
         if(usuario.getSaldo() < apuesta){
             ValueException
         }
-        this.usuarios = new ArrayList<Usuario>()
+        this.usuarios = new ArrayList<UsuarioModel>()
         this.usuarios.add(usuario)
         this.apuesta = apuesta
         this.cantidadJugadoresMaximo = cantidadJugadoresMaximo
     }
 
-    boolean unirse(Usuario usuario){
+    boolean unirse(UsuarioModel usuario){
         if((usuario.getSaldo() < apuesta) || (this.cantidadJugadoresMaximo == this.usuarios.size()) || usuario.estaBaneado()) {
             return false;
         } else {

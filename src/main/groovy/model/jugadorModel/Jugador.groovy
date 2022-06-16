@@ -4,9 +4,9 @@ import model.cartaModel.Carta;
 
 class Jugador {
     private ArrayList<Carta> mano;
-    private Usuario usuario;
+    private UsuarioModel usuario;
 
-    Jugador(Usuario usuario){
+    Jugador(UsuarioModel usuario){
         this.mano = new ArrayList<Carta>()
         this.usuario = usuario
     }

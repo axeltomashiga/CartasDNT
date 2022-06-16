@@ -1,16 +1,16 @@
 package uno
 
-import model.jugadorModel.Usuario
+import model.jugadorModel.UsuarioModel
 import spock.lang.Specification
 
 import java.time.LocalDate
 import java.time.LocalDateTime
 import java.time.LocalTime
 
-class UsuarioClassTest extends Specification{
-    Usuario usuario;
+class UsuarioModelClassTest extends Specification{
+    UsuarioModel usuario;
     def setup(){
-        this.usuario = new Usuario()
+        this.usuario = new UsuarioModel()
     }
 
     void "Usuario inicia con saldo en 0" () {

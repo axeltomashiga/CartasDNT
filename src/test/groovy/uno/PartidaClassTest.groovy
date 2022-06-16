@@ -1,7 +1,7 @@
 package uno
 
 import model.jugadorModel.Jugador
-import model.jugadorModel.Usuario
+import model.jugadorModel.UsuarioModel
 import model.partidaModel.Partida
 import spock.lang.Specification
 
@@ -9,8 +9,8 @@ class PartidaClassTest extends Specification{
     Partida partida;
 
     def setup() {
-        Usuario usuario1 = new Usuario()
-        Usuario usuario2 = new Usuario()
+        UsuarioModel usuario1 = new UsuarioModel()
+        UsuarioModel usuario2 = new UsuarioModel()
         usuario1.cargarSaldo(new BigDecimal(1000))
         usuario2.cargarSaldo(new BigDecimal(1000))
         ArrayList<Jugador> lista = [new Jugador(usuario1),new Jugador(usuario2)]

@@ -1,7 +1,7 @@
 package uno
 
 
-import model.jugadorModel.Usuario
+import model.jugadorModel.UsuarioModel
 import model.partidaModel.Sala
 import spock.lang.*
 
@@ -10,13 +10,13 @@ import java.time.LocalDateTime
 import java.time.LocalTime
 
 class SalaClassTest extends Specification{
-    Usuario a;
-    Usuario b;
+    UsuarioModel a;
+    UsuarioModel b;
     Sala sala;
 
     def setup() {
-        a =  new Usuario()
-        b =  new Usuario()
+        a =  new UsuarioModel()
+        b =  new UsuarioModel()
         a.cargarSaldo(200 as BigDecimal)
         b.cargarSaldo(100 as BigDecimal)
 
@@ -31,7 +31,7 @@ class SalaClassTest extends Specification{
 
     void "no puedo entrar por falta saldo"(){
         setup()
-        var c = new Usuario()
+        var c = new UsuarioModel()
         c.cargarSaldo(2 as BigDecimal)
         expect:
         !sala.unirse(c)
@@ -39,7 +39,7 @@ class SalaClassTest extends Specification{
 
     void "no puedo entrar si estoy lleno"() {
         setup()
-        var c = new Usuario()
+        var c = new UsuarioModel()
         c.cargarSaldo(110 as BigDecimal)
         sala.unirse(b)
         expect:

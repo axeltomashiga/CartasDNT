@@ -1,6 +1,6 @@
-#Wed, 15 Jun 2022 21:40:25 -0300
+#Thu, 16 Jun 2022 14:51:34 -0300
 
 info.app.version=0.1
 info.app.name=uno
-grails.env=production
+grails.env=development
 info.app.grailsVersion=5.1.7
