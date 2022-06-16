@@ -20,7 +20,7 @@ class Sala {
     }
 
     boolean unirse(Usuario usuario){
-        if((usuario.getSaldo() < apuesta) || (this.cantidadJugadoresMaximo == this.usuarios.size())) {
+        if((usuario.getSaldo() < apuesta) || (this.cantidadJugadoresMaximo == this.usuarios.size()) || usuario.estaBaneado()) {
             return false;
         } else {
             this.usuarios.add(usuario)

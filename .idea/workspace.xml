@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d92c4a86-c7dc-4588-a1df-93f1980b4ca2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/groovy/uno/IntegracionTest.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/groovy/uno/SalaClassTest.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/groovy/model/jugadorModel/EstadoUsuario.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/groovy/uno/UsuarioClassTest.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" afterDir="false" />
@@ -14,64 +14,90 @@
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/model/cartaModel/Carta.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/groovy/main/model/cartaModel/Carta.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/model/cartaModel/CartaComun.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/groovy/main/model/cartaModel/CartaComun.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/model/jugadorModel/Jugador.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/groovy/main/model/jugadorModel/Jugador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/model/jugadorModel/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/groovy/main/model/jugadorModel/Usuario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/model/mazoModel/Mazo.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/groovy/main/model/mazoModel/Mazo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/model/partidaModel/Partida$_inicializarPartida_closure1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/groovy/main/model/partidaModel/Partida$_inicializarPartida_closure1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/model/partidaModel/Partida.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/groovy/main/model/partidaModel/Partida.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/model/partidaModel/Sala$_iniciarPartida_closure1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/groovy/main/model/partidaModel/Sala$_iniciarPartida_closure1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/model/partidaModel/Sala.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/groovy/main/model/partidaModel/Sala.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/uno/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/groovy/main/uno/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/uno/ApplicationLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/groovy/main/uno/ApplicationLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/uno/BootStrap$_closure1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/groovy/main/uno/BootStrap$_closure1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/uno/BootStrap$_closure2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/groovy/main/uno/BootStrap$_closure2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/uno/BootStrap.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/groovy/main/uno/BootStrap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/uno/PartidaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/groovy/main/uno/PartidaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/uno/UrlMappings$__clinit__closure1$_closure2$_closure3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/groovy/main/uno/UrlMappings$__clinit__closure1$_closure2$_closure3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/uno/UrlMappings$__clinit__closure1$_closure2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/groovy/main/uno/UrlMappings$__clinit__closure1$_closure2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/uno/UrlMappings$__clinit__closure1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/groovy/main/uno/UrlMappings$__clinit__closure1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/uno/UrlMappings.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/groovy/main/uno/UrlMappings.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/groovy/test/uno/CartaComunClassTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/groovy/test/uno/CartaComunClassTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/groovy/test/uno/MazoClassTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/groovy/test/uno/MazoClassTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/groovy/test/uno/PartidaClassTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/groovy/test/uno/PartidaClassTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/groovy/test/uno/PartidaControllerSpec.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/groovy/test/uno/PartidaControllerSpec.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/uno.CartaComunClassTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/uno.PartidaClassTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/uno.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/uno.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/META-INF/grails.build.info" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/META-INF/grails.build.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/messages_cs.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/messages_cs.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/messages_da.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/messages_da.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/messages_de.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/messages_de.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/messages_es.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/messages_es.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/messages_fr.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/messages_fr.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/messages_it.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/messages_it.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/messages_ja.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/messages_ja.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/messages_nb.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/messages_nb.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/messages_pl.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/messages_pl.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/messages_pt_BR.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/messages_pt_BR.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/messages_pt_PT.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/messages_pt_PT.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/messages_ru.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/messages_ru.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/messages_sk.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/messages_sk.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/messages_sv.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/messages_sv.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/messages_th.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/messages_th.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-uno.CartaComunClassTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-uno.PartidaClassTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/model/jugadorModel/Jugador.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/model/jugadorModel/Jugador.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/model/partidaModel/Partida.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/model/partidaModel/Partida.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/.assetcache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/.dependencies" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/.grailspid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/bootRunMainClassName" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/model/cartaModel/Carta.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/model/cartaModel/CartaComun.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/model/jugadorModel/Jugador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/model/jugadorModel/Usuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/model/mazoModel/Mazo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/model/partidaModel/Partida$_inicializarPartida_closure1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/model/partidaModel/Partida.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/model/partidaModel/Sala$_iniciarPartida_closure1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/model/partidaModel/Sala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/uno/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/uno/ApplicationLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/uno/BootStrap$_closure1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/uno/BootStrap$_closure2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/uno/BootStrap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/uno/PartidaController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/uno/UrlMappings$__clinit__closure1$_closure2$_closure3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/uno/UrlMappings$__clinit__closure1$_closure2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/uno/UrlMappings$__clinit__closure1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/groovy/main/uno/UrlMappings.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/groovy/test/uno/CartaComunClassTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/groovy/test/uno/IntegracionTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/groovy/test/uno/MazoClassTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/groovy/test/uno/PartidaClassTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/groovy/test/uno/PartidaControllerSpec.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/groovy/test/uno/SalaClassTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/classes/uno.CartaComunClassTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/css/base-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/js/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/packages/uno.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/uno.IntegracionTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/uno.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/integrationTest/GebConfig.groovy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/integrationTest/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/integrationTest/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/integrationTest/spring/resources.groovy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/META-INF/grails.build.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/error.gsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/index.gsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/layouts/main.gsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/messages.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/messages_cs.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/messages_da.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/messages_de.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/messages_es.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/messages_fr.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/messages_it.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/messages_ja.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/messages_nb.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/messages_nl.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/messages_pl.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/messages_pt_BR.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/messages_pt_PT.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/messages_ru.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/messages_sk.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/messages_sv.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/messages_th.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/messages_zh_CN.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/notFound.gsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/spring/resources.groovy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-uno.IntegracionTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/controllers/uno/PartidaController.groovy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/model/jugadorModel/Usuario.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/model/jugadorModel/Usuario.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/groovy/model/partidaModel/Sala.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/model/partidaModel/Sala.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/groovy/uno/PartidaClassTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/uno/PartidaClassTest.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/groovy/uno/PartidaControllerSpec.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/uno/PartidaControllerSpec.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/groovy/uno/PartidaControllerSpec.groovy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/groovy/uno/SalaClassTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/uno/SalaClassTest.groovy" afterDir="false" />
     </list>
-    <list id="fbd06f36-3d7e-42af-bcaf-7f250262af64" name="Changes by ivanp" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/model/partidaModel/Partida.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/model/partidaModel/Partida.groovy" afterDir="false" />
-    </list>
+    <list id="fbd06f36-3d7e-42af-bcaf-7f250262af64" name="Changes by ivanp" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -136,21 +162,6 @@
   <component name="KotlinMultiplatform">
     <allAvailableExecutables />
   </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/groovy/model/partidaModel/Partida.groovy">
-      <ranges>
-        <range start1="3" end1="3" start2="3" end2="4" changelist="d92c4a86-c7dc-4588-a1df-93f1980b4ca2" />
-        <range start1="12" end1="12" start2="13" end2="14" changelist="d92c4a86-c7dc-4588-a1df-93f1980b4ca2" />
-        <range start1="18" end1="18" start2="20" end2="21" changelist="fbd06f36-3d7e-42af-bcaf-7f250262af64" />
-        <range start1="26" end1="26" start2="29" end2="30" changelist="d92c4a86-c7dc-4588-a1df-93f1980b4ca2" />
-        <range start1="33" end1="33" start2="37" end2="38" changelist="d92c4a86-c7dc-4588-a1df-93f1980b4ca2" />
-        <range start1="42" end1="43" start2="47" end2="47" changelist="d92c4a86-c7dc-4588-a1df-93f1980b4ca2" />
-        <range start1="45" end1="46" start2="49" end2="49" changelist="d92c4a86-c7dc-4588-a1df-93f1980b4ca2" />
-        <range start1="49" end1="49" start2="52" end2="55" changelist="d92c4a86-c7dc-4588-a1df-93f1980b4ca2" />
-        <range start1="50" end1="50" start2="56" end2="60" changelist="d92c4a86-c7dc-4588-a1df-93f1980b4ca2" />
-      </ranges>
-    </file>
-  </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="jmr3k2at" />
   </component>
@@ -189,12 +200,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PartidaClassTest.gana un jugador y recibe premio" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SalaClassTest.no puedo entrar si estoy baneado" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;uno.PartidaClassTest.gana un jugador y recibe premio&quot;" />
+        <option name="scriptParameters" value="--tests &quot;uno.SalaClassTest.no puedo entrar si estoy baneado&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -210,12 +221,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PartidaClassTest.gana un jugador" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UsuarioClassTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;uno.PartidaClassTest.gana un jugador&quot;" />
+        <option name="scriptParameters" value="--tests &quot;uno.UsuarioClassTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -231,12 +242,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PartidaClassTest.paso el dos turnos en una partida de dos jugadores y vuelve al mismo jugador" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UsuarioClassTest.El ban es aplicable si la fecha es posterior a la del dia" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;uno.PartidaClassTest.paso el dos turnos en una partida de dos jugadores y vuelve al mismo jugador&quot;" />
+        <option name="scriptParameters" value="--tests &quot;uno.UsuarioClassTest.El ban es aplicable si la fecha es posterior a la del dia&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -252,12 +263,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="SalaClassTest.me uno y se me resta el saldo" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UsuarioClassTest.El ban no es aplicable si la fecha es inferior a la del dia" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;uno.SalaClassTest.me uno y se me resta el saldo&quot;" />
+        <option name="scriptParameters" value="--tests &quot;uno.UsuarioClassTest.El ban no es aplicable si la fecha es inferior a la del dia&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -276,10 +287,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.IntegracionTest" />
-        <item itemvalue="Gradle.PartidaClassTest.gana un jugador y recibe premio" />
-        <item itemvalue="Gradle.PartidaClassTest.gana un jugador" />
-        <item itemvalue="Gradle.SalaClassTest.me uno y se me resta el saldo" />
-        <item itemvalue="Gradle.PartidaClassTest.paso el dos turnos en una partida de dos jugadores y vuelve al mismo jugador" />
+        <item itemvalue="Gradle.SalaClassTest.no puedo entrar si estoy baneado" />
+        <item itemvalue="Gradle.UsuarioClassTest" />
+        <item itemvalue="Gradle.UsuarioClassTest.El ban no es aplicable si la fecha es inferior a la del dia" />
+        <item itemvalue="Gradle.UsuarioClassTest.El ban es aplicable si la fecha es posterior a la del dia" />
       </list>
     </recent_temporary>
   </component>
@@ -295,7 +306,9 @@
       <workItem from="1654196926215" duration="360000" />
       <workItem from="1654210144952" duration="107000" />
       <workItem from="1654272782451" duration="47000" />
-      <workItem from="1655232142705" duration="6593000" />
+      <workItem from="1655232142705" duration="8430000" />
+      <workItem from="1655318637808" duration="578000" />
+      <workItem from="1655327735771" duration="6958000" />
     </task>
     <servers />
   </component>
@@ -540,5 +553,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

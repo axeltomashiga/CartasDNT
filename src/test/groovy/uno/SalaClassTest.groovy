@@ -5,6 +5,10 @@ import model.jugadorModel.Usuario
 import model.partidaModel.Sala
 import spock.lang.*
 
+import java.time.LocalDate
+import java.time.LocalDateTime
+import java.time.LocalTime
+
 class SalaClassTest extends Specification{
     Usuario a;
     Usuario b;
@@ -40,6 +44,12 @@ class SalaClassTest extends Specification{
         sala.unirse(b)
         expect:
         !sala.unirse(c)
+    }
+
+    void "no puedo entrar si estoy baneado"(){
+        b.banear(new LocalDateTime(new LocalDate(2023,7,15), new LocalTime(12,0,0,0)))
+        expect:
+        !sala.unirse(b)
     }
 
     void "no puedo iniciar partida si no esta llena"() {
