@@ -14,22 +14,8 @@ class CartaComun implements Carta{
         return(this.numero == otraCarta.numero || this.color == otraCarta.color)
     }
 
-    // public void devolverAlMazo(){
-    //     this.estadoCarta = new Desactivada();
-    //     this.mazo.vuelveAlMazo(this);
-    //     this.boxCarta.volviAlMazo();
-    // }
-
-    // public void asociarAlMazo(Mazo unMazo){
-    //     this.mazo = unMazo;
-    // }
-
-    // @Override
-    // public boolean equals(Object otro){
-    //     if(this == otro) return true;
-    //     else if(otro == null  otro.getClass() != Carta.class) return false;
-    //     Carta otraCarta = (Carta) otro;
-    //     return this.pais.equals(otraCarta.pais) && this.simbolo.equals(otraCarta.simbolo);
-    // }
+    boolean esJugadaValida(Carta otraCarta){
+        true
+    }
 
 }
